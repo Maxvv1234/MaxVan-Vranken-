@@ -3,30 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The personal portfolio of Max Van Vranken.">
-  <title>Max Van Vranken | Portfolio</title>
+  <meta name="theme-color" content="#0a0806">
+  <meta name="description" content="The personal website of Max Van Vranken. Connect on LinkedIn, explore GitHub, or get in touch.">
+  <title>Max Van Vranken — Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home">PORTFOLIO<span class="accent">.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
-      <div class="nav-links" id="nav-links"><a href="#about">About</a><a href="#focus">Interests</a><a href="#contact">Contact</a></div>
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Max Van Vranken, home"><span class="brand-mark" aria-hidden="true"></span> MVV</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu" hidden>Menu <span aria-hidden="true">＋</span></button>
+      <div class="nav-links" id="nav-links"><a href="#introduction">Introduction</a><a href="https://www.linkedin.com/in/max-van-vranken-202a253b2/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/Maxvv1234" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      <a class="nav-contact" href="mailto:max.vanvranken@student.fairfield.edu">Get in touch <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main id="main">
-    <section class="hero container" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> PERSONAL WEBSITE</p><h1 id="hero-title">Hello, I'm <span class="accent">Max Van Vranken</span><span class="period">.</span></h1><p class="hero-lead">Welcome to my professional portfolio.</p><p class="hero-detail">Explore my background, interests, and work. This website is ready to personalize with verified details from my résumé.</p><div class="hero-actions"><a class="btn btn-primary" href="#about">Explore my profile <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#contact">Get in touch <span aria-hidden="true">→</span></a></div></div>
-      <div class="portrait-wrap"><div class="portrait-frame"><img src="profile.jpg" alt="Max Van Vranken" id="profile-photo"><div class="photo-fallback" hidden><span aria-hidden="true">◎</span><p>Max Van Vranken</p></div></div><span class="portrait-decoration" aria-hidden="true"></span></div>
+    <section class="hero shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy intro-motion"><p class="micro eyebrow"><span class="signal" aria-hidden="true"></span> A personal introduction</p><h1 id="hero-title">Max Van<br><span class="gold">Vranken.</span></h1><p class="hero-note">A little introduction.<br>An open conversation.</p><div class="hero-actions"><a class="button button-gold" href="mailto:max.vanvranken@student.fairfield.edu">Say hello <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.linkedin.com/in/max-van-vranken-202a253b2/" target="_blank" rel="noopener noreferrer">Find me on LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+      <div class="portrait-scene intro-motion"><div class="orbit orbit-outer" aria-hidden="true"></div><div class="orbit orbit-inner" aria-hidden="true"></div><figure class="portrait"><img src="profile.jpg" width="800" height="800" alt="Max Van Vranken" id="profile-photo" fetchpriority="high"><div class="photo-fallback" hidden aria-label="Max Van Vranken monogram"><span aria-hidden="true">M<span>V</span>V</span></div><figcaption class="portrait-caption"><span class="micro">The personal portfolio</span><span>Max Van Vranken</span></figcaption></figure><span class="portrait-index micro" aria-hidden="true">01 / A closer look</span><span class="spark spark-one" aria-hidden="true"></span><span class="spark spark-two" aria-hidden="true"></span></div>
+      <div class="hero-bottom"><button class="replay micro" type="button" hidden><span aria-hidden="true">↻</span> Replay intro</button><a class="scroll-link micro" href="#introduction">Discover more <span aria-hidden="true">↓</span></a><span class="edition micro">Personal website / 2026</span></div>
     </section>
-    <div class="section-rule container"></div>
-    <section class="section container" id="about"><div class="section-heading"><p class="eyebrow">01 / INTRODUCTION</p><h2>About me<span class="accent">.</span></h2></div><div class="section-content"><p class="large-copy">I'm building a professional presence to share my experience, interests, and future work.</p><p>Replace this introduction with a short, accurate biography based on your résumé. Mention your current education, professional interests, and the work that matters most to you.</p></div></section>
-    <section class="section muted-section" id="focus"><div class="container"><div class="section-heading"><p class="eyebrow">02 / AREAS OF INTEREST</p><h2>What I'm exploring<span class="accent">.</span></h2></div><div class="interest-grid"><article class="interest-card"><span class="card-number">01</span><h3>Learning</h3><p>Add a verified academic area or subject from your résumé.</p></article><article class="interest-card"><span class="card-number">02</span><h3>Experience</h3><p>Highlight a role, project, or relevant accomplishment from your résumé.</p></article><article class="interest-card"><span class="card-number">03</span><h3>Next steps</h3><p>Describe your professional goals in your own words.</p></article></div></div></section>
-    <section class="section container" id="contact"><div class="section-heading"><p class="eyebrow">03 / CONNECT</p><h2>Let's connect<span class="accent">.</span></h2></div><div class="section-content"><p class="large-copy">Interested in connecting? I'd love to hear from you.</p><p>Explore my projects and code on GitHub.</p><div class="contact-actions" id="contact-links"><a class="btn btn-primary" href="https://github.com/Maxvv1234" target="_blank" rel="noopener noreferrer">View my GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="introduction shell section" id="introduction" aria-labelledby="intro-title"><p class="micro section-label">01 / Introduction</p><div><h2 id="intro-title">The person<br><span class="gold">behind the name.</span></h2><p class="body-copy">Welcome to my personal corner of the web. Find me on LinkedIn, explore my code on GitHub, or get in touch directly.</p><a class="text-link" href="https://github.com/Maxvv1234" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a></div></section>
+    <!-- Resume-based education, experience, projects and skills will be added after the resume is supplied. -->
+    <section class="contact shell section" id="contact" aria-labelledby="contact-title"><p class="micro section-label">02 / Connect</p><div><h2 id="contact-title">Let's start a<br><span class="gold">conversation.</span></h2><p class="body-copy">A question, an idea, or simply a hello.</p><a class="email-link" href="mailto:max.vanvranken@student.fairfield.edu">max.vanvranken@student.fairfield.edu <span aria-hidden="true">↗</span></a><div class="contact-links"><a class="text-link" href="https://www.linkedin.com/in/max-van-vranken-202a253b2/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Maxvv1234" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> <span>Max Van Vranken</span></span><a href="#home">Back to top ↑</a></div></footer>
+  <footer class="footer shell"><a class="brand" href="#home">MVV<span class="footer-dot" aria-hidden="true">.</span></a><p>© <span id="year">2026</span> Max Van Vranken</p><a class="micro" href="#home">Back to top ↑</a></footer>
 </body>
 </html>
